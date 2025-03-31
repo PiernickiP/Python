@@ -12,7 +12,7 @@ for item in sentence:
     if item in punctuation:
         counter += 1
 
-print(f"Your text has {counter} punctuatuion/s.")
+print(f"Your text has {counter} punctuation/s.")
 
 reversed_sentence = sentence[::-1].lower()
 if sentence.lower() == reversed_sentence:
