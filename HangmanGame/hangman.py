@@ -77,7 +77,6 @@ HANGMANPICS = ['''
 =========''']
 
 print(HANGMANPICS[display])
-print(chosen_word)
 quess = input("Welcome to Hangman Game! \nMake a quess: ")
 quessing_game()
 print(HANGMANPICS[display])
