@@ -1,5 +1,15 @@
 import random
 
+display = 0
+
+word_list = ["avocado", "football", "basketball", "gaming", "witcher", "apple", "computer"]
+chosen_word = list(random.choice(word_list))
+
+blank = ""
+for letter in chosen_word:
+    blank += "_"
+blank_list = list(blank)
+
 def quessing_game():
     index = 0
     global display
@@ -12,7 +22,7 @@ def quessing_game():
     if correct_quess == False:
         print(f"There was no {quess} in our secret word.")
         display += 1
-    index = 0
+
     
 
 HANGMANPICS = ['''
@@ -65,15 +75,6 @@ HANGMANPICS = ['''
  / \  |
       |
 =========''']
-display = 0
-
-word_list = ["avocado", "football", "basketball", "gaming", "witcher", "apple", "computer"]
-chosen_word = list(random.choice(word_list))
-
-blank = ""
-for letter in chosen_word:
-    blank += "_"
-blank_list = list(blank)
 
 print(HANGMANPICS[display])
 print(chosen_word)
